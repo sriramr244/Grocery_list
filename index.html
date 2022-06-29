@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Grolist</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>Grocery List <i class="fa-solid fa-basket-shopping"></i></h1>
+    </header>
+    <form>
+        <input type="number" class="quantity_item" placeholder="Enter quantity">
+        <input type="text" class="grocery_item" placeholder="Enter your grocery item">
+        <button class="grocery_item_add_button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="to_buy_items" class="to_buy">
+                <option value="all">All</option>
+                <option value="purchased">Purchased</option>
+                <option value="tobebought">To be purchased</option>
+            </select>
+        </div>
+    </form>
+    <div class="To_buy_container">
+        <ul class="To_buy_List"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+
+
+
+</body>
+</html>
